@@ -33,7 +33,7 @@ ID2D1Bitmap1*& BitmapRenderData::GetBitmap()
 	return bitmap;
 }
 
-Rect BitmapRenderData::GetVisibleArea()
+Rect& BitmapRenderData::GetVisibleArea()
 {
 	return visibleArea;
 }

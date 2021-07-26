@@ -15,7 +15,7 @@ public:
 	~SpriteRenderData();
 
 	Texture* GetTexture();
-	Rect GetVisibleArea();
+	Rect& GetVisibleArea();
 	Rect GetRealArea();
 	EnlargementType GetEnlargementType();
 	D2D1_INTERPOLATION_MODE GetInterpolationMode();

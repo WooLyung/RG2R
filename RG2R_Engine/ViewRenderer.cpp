@@ -58,22 +58,24 @@ void ViewRenderer::Draw()
 	if (effect != nullptr)
 	{
 		ID2D1Image* image = effect->GetOutputImage(renderData.GetBitmap());
+		auto&& ref = Rect(0, 0, renderData.GetSize().width, renderData.GetSize().height);
 
 		RG2R_GraphicM->GetDeviceContext()->DrawImage(
 			image,
 			nullptr,
-			&Rect(0, 0, renderData.GetSize().width, renderData.GetSize().height),
+			&ref,
 			D2D1_INTERPOLATION_MODE_LINEAR,
 			D2D1_COMPOSITE_MODE_SOURCE_OVER);
 	}
 	else
 	{
+		auto&& ref = Rect(0, 0, renderData.GetSize().width, renderData.GetSize().height);
 		RG2R_GraphicM->GetDeviceContext()->DrawBitmap(
 			renderData.GetBitmap(),
 			nullptr,
 			1.f,
 			D2D1_BITMAP_INTERPOLATION_MODE_LINEAR,
-			&Rect(0, 0, renderData.GetSize().width, renderData.GetSize().height));
+			&ref);
 	}
 }
 

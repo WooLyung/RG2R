@@ -21,7 +21,7 @@ public:
 	~AnimationRenderData();
 
 	std::vector<Textures>* GetAnimations();
-	Rect GetVisibleArea();
+	Rect& GetVisibleArea();
 	int GetTargetAnim();
 	int GetNowIndex();
 	float GetInterval();

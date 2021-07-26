@@ -85,7 +85,7 @@ Camera* ViewRenderData::GetCamera()
 	return targetCamera;
 }
 
-Size2U ViewRenderData::GetSize()
+Size2U& ViewRenderData::GetSize()
 {
 	return size;
 }

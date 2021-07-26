@@ -15,7 +15,7 @@ Texture* SpriteRenderData::GetTexture()
 	return texture;
 }
 
-Rect SpriteRenderData::GetVisibleArea()
+Rect& SpriteRenderData::GetVisibleArea()
 {
 	return visibleArea;
 }

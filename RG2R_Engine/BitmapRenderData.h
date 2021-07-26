@@ -14,7 +14,7 @@ public:
 	~BitmapRenderData();
 
 	ID2D1Bitmap1*& GetBitmap();
-	Rect GetVisibleArea();
+	Rect& GetVisibleArea();
 	Size2U GetSize();
 
 	BitmapRenderData* SetBitmap(ID2D1Bitmap1*);

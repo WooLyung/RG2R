@@ -10,7 +10,7 @@ AnimationRenderData::~AnimationRenderData()
 {
 }
 
-Rect AnimationRenderData::GetVisibleArea()
+Rect& AnimationRenderData::GetVisibleArea()
 {
 	return visibleArea;
 }

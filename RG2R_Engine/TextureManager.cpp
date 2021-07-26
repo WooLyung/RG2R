@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "TextureManager.h"
 
-using namespace std::experimental::filesystem;
+using namespace std::filesystem;
 
 TextureManager::TextureManager()
 	:isLoaded_(true), filesLoaded_(0), filesToLoadPerFrame_(0)
