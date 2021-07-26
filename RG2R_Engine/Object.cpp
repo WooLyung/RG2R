@@ -225,9 +225,6 @@ void Object::Update()
 			iter->OnUpdate();
 		}
 	}
-
-	if (state == OBJ_DESTROY)
-		delete this;
 }
 
 void Object::SetIsFlipX(bool flag)
