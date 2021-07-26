@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  The contents of <variant> are available only with C++17 or later.
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\experimental\filesystem(30,1): fatal error C1189: #error:  The <experimental/filesystem> header providing std::experimental::filesystem is deprecated by Microsoft and will be REMOVED. It is superseded by the C++17 <filesystem> header providing std::filesystem. You can define _SILENCE_EXPERIMENTAL_FILESYSTEM_DEPRECATION_WARNING to acknowledge that you have received this warning.
