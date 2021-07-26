@@ -1,0 +1,9 @@
+x:7, y:7, zoom:0.5, text:모든_조명을_밝히세요
+x:-3, y:2, type:battery, dir:right, color:blue
+x:-3, y:0, type:battery, dir:right, color:green
+x:-3, y:-2, type:battery, dir:right, color:blue
+x:0, y:2, type:add_gate, dir:down
+x:0, y:-2, type:add_gate, dir:up
+x:0, y:0, type:division_gate, dir:right
+x:3, y:1, type:light1, dir:right
+x:3, y:-1, type:light1, dir:right

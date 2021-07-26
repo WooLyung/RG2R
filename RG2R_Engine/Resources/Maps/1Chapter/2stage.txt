@@ -1,0 +1,5 @@
+x:7, y:5, zoom:0.5, text:색을_합쳐_조명을\흰색으로_밝히세요
+x:-3, y:2, type:battery, dir:right, color:green
+x:-3, y:-2, type:battery, dir:right, color:magenta
+x:0, y:0, type:add_gate, dir:right
+x:3, y:0, type:light1, dir:right

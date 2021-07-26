@@ -42,12 +42,10 @@ void Scene::UpdateBefore()
 
 			if (iter->isFirstUpdate)
 			{
-				ApplyListener(iter->onStartListener);
-				iter->OnStart();
-
 				ApplyListener(iter->onFirstUpdateBeforeListener);
 				iter->OnFirstUpdateBefore();
 			}
+
 			ApplyListener(iter->onUpdateBeforeListener);
 			iter->OnUpdateBefore();
 		}
@@ -59,17 +57,21 @@ void Scene::Update()
 	vector<Object*> updateObject = objects;
 	for (auto iter : updateObject)
 	{
+		iter->Update();
+
 		if (iter->GetIsEnable())
 		{
-			iter->Update();
-
 			if (iter->isFirstUpdate)
 			{
+				ApplyListener(iter->onStartListener);
+				iter->OnStart();
+
 				ApplyListener(iter->onFirstUpdateListener);
 				iter->OnFirstUpdate();
 
 				iter->isFirstUpdate = false;
 			}
+
 			ApplyListener(iter->onUpdateListener);
 			iter->OnUpdate();
 		}

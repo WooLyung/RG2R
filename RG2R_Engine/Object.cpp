@@ -160,9 +160,6 @@ void Object::UpdateBefore()
 
 			if (iter->isFirstUpdate)
 			{
-				ApplyListener(iter->onStartListener);
-				iter->OnStart();
-
 				ApplyListener(iter->onFirstUpdateBeforeListener);
 				iter->OnFirstUpdateBefore();
 			}

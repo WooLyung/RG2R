@@ -73,6 +73,8 @@ void SceneManager::Update()
 
 	if (registeredScene != nullptr)
 	{
+		registeredScene->UpdateBefore();
+
 		if (registeredScene->GetIsFirstUpdate())
 		{
 			ApplyListener(registeredScene->onStartListener);

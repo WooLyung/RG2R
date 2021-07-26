@@ -1,0 +1,9 @@
+x:7, y:7, zoom:0.5, text:역분배_게이트는_받은\색을_반전시켜_내보냅니다
+x:-3, y:2, type:battery, dir:right, color:blue
+x:-3, y:-2, type:battery, dir:right, color:red
+x:0, y:1, type:division_gate, dir:right
+x:0, y:0, type:not_division_gate, dir:right
+x:0, y:-1, type:sub_gate, dir:right
+x:3, y:-3, type:light1, dir:right
+x:3, y:0, type:light1, dir:right
+x:3, y:3, type:add_gate, dir:right

@@ -1,0 +1,5 @@
+x:7, y:7, zoom:0.5, text:교집합_게이트는_겹치는\색을_내보냅니다.
+x:-2, y:1, type:battery, dir:right, color:blue
+x:-2, y:0, type:battery, dir:right, color:red
+x:2, y:1, type:diff_gate, dir:right
+x:2, y:-1, type:light1, dir:right

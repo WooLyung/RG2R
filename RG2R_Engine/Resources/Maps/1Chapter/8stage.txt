@@ -1,0 +1,6 @@
+x:7, y:7, zoom:0.5, text:감산_게이트는_왼쪽에서\받은_색에서_아래에서\받은_색을_제거합니다
+x:-3, y:0, type:battery, dir:right, color:red
+x:-1, y:0, type:sub_gate, dir:right
+x:1, y:2, type:division_gate, dir:right
+x:1, y:-2, type:reverse_gate, dir:right
+x:3, y:0, type:light1, dir:right

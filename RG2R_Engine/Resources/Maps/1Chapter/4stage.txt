@@ -1,0 +1,6 @@
+x:7, y:5, zoom:0.5, text:마우스_휠로_배터리의\색을_바꿀_수_있습니다
+x:-3, y:2, type:battery, dir:right, color:green
+x:-3, y:0, type:battery, dir:right, color:green
+x:-3, y:-2, type:battery, dir:right, color:green
+x:0, y:0, type:add_gate, dir:right
+x:3, y:0, type:light2, dir:right

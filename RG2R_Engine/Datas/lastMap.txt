@@ -1,0 +1,7 @@
+x:4,y:4,zoom:0.750000,text:_
+x:-2,y:1,type:battery,color:red
+x:-2,y:-1,type:battery,color:red
+x:-2,y:0,type:battery,color:red
+x:-1,y:0,type:add_gate
+x:-1,y:-1,type:add_gate
+x:0,y:0,type:light1

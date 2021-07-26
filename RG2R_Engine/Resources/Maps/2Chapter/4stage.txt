@@ -1,0 +1,12 @@
+x:9, y:7, zoom:0.5, text:모든_스테이지는\클리어가_가능합니다
+x:-3, y:0, type:battery, dir:right, color:cyan, isStatic:true
+x:-3, y:-2, type:battery, dir:right, color:green
+x:-3, y:2, type:battery, dir:right, color:red
+x:1, y:1, type:add_gate, dir:right
+x:1, y:-1, type:sub_gate, dir:right
+x:-1, y:-2, type:division_gate, dir:right
+x:-1, y:2, type:division_gate, dir:right
+x:-1, y:0, type:reverse_gate, dir:left
+x:3, y:2, type:light1, dir:right
+x:3, y:0, type:light1, dir:right
+x:3, y:-2, type:light1, dir:right

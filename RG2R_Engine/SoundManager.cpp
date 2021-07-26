@@ -255,8 +255,6 @@ SoundCode SoundManager::Play(const path& filePath, SoundOptions soundOptions)
 	{
 		Load(filePath);
 
-		std::cout << "WOW" << std::endl;
-
 		SoundCode code = -1, nowCode = 0;
 		Sound* sound;
 

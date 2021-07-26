@@ -1,0 +1,11 @@
+x:9, y:7, zoom:0.5, text:_
+x:-3, y:1, type:battery, dir:right, color:red
+x:-3, y:-1, type:battery, dir:right, color:magenta, isStatic:true
+x:1, y:0, type:add_gate, dir:right
+x:1, y:-2, type:sub_gate, dir:right
+x:1, y:2, type:sub_gate, dir:right
+x:-1, y:-2, type:division_gate, dir:right
+x:-1, y:2, type:division_gate, dir:right
+x:-1, y:0, type:division_gate, dir:right
+x:3, y:1, type:light1, dir:right
+x:3, y:-1, type:light1, dir:right
