@@ -2,12 +2,18 @@
 #include "SceneManager.h"
 #include "Scene.h"
 #include "Engine.h"
-#include "SpriteRenderer.h"
-#include <iostream>
+#include "IntroScene.h"
+#include "InGameScene.h"
+#include "ChapterScene.h"
+#include "StageScene.h"
+#include "SettingData.h"
 
 Scene* SceneManager::FirstScene()
 {
-	return nullptr;
+	ShowCursor(false);
+	SettingData::GetInstance();
+
+	return new IntroScene;
 }
 
 SceneManager::SceneManager()
@@ -67,8 +73,6 @@ void SceneManager::Update()
 
 	if (registeredScene != nullptr)
 	{
-		registeredScene->UpdateBefore();
-
 		if (registeredScene->GetIsFirstUpdate())
 		{
 			ApplyListener(registeredScene->onStartListener);
@@ -100,7 +104,7 @@ void SceneManager::Render()
 {
 	if (registeredScene != nullptr)
 	{
-		if (registeredScene->GetIsFirstRender())
+		if (registeredScene->GetIsFirstRender()) 
 		{
 			ApplyListener(registeredScene->onFirstRenderBeforeListener);
 			registeredScene->OnFirstRenderBefore();
@@ -131,7 +135,7 @@ void SceneManager::Render(ViewRenderData& viewRenderData)
 }
 
 Scene* SceneManager::ChangeScene(Scene* newScene)
-{
+{	
 	nextScene = newScene;
 
 	return nextScene;

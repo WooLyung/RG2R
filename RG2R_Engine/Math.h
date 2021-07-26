@@ -298,3 +298,40 @@ using Matrix = D2D1_MATRIX_3X2_F;
 
 
 #include"Math.inl"
+
+struct Color8 {
+	bool r = 0, g = 0, b = 0;
+
+	Color8() {}
+	Color8(int r, int g, int b) {
+		this->r = r;
+		this->g = g;
+		this->b = b;
+	}
+
+	bool operator==(Color8 color)
+	{
+		return (r == color.r && g == color.g && b == color.b);
+	}
+
+	bool operator!=(Color8 color)
+	{
+		return !(*this == color);
+	}
+
+	Color8 operator!() {
+		return Color8(!r, !g, !b);
+	}
+
+	Color8 operator+(Color8 color) {
+		return Color8(r || color.r, g || color.g, b || color.b);
+	}
+
+	Color8 operator-(Color8 color) {
+		return Color8(!r ? 0 : (r - color.r), !g ? 0 : (g - color.g), !b ? 0 : (b - color.b));
+	}
+
+	Color8 operator&(Color8 color) {
+		return Color8(r * color.r, g * color.g, b * color.b);
+	}
+};
