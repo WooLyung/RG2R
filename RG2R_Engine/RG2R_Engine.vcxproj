@@ -264,6 +264,7 @@
     <ClInclude Include="ViewRenderData.h" />
     <ClInclude Include="ViewRenderer.h" />
     <ClInclude Include="WindowManager.h" />
+    <ClInclude Include="WrappedEngine.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AddGate.cpp" />
@@ -371,6 +372,7 @@
     <ClCompile Include="ViewRenderData.cpp" />
     <ClCompile Include="ViewRenderer.cpp" />
     <ClCompile Include="WindowManager.cpp" />
+    <ClCompile Include="WrappedEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="RG2R_Engine.rc" />

@@ -15,7 +15,7 @@ Engine* Engine::GetInstance()
 	return &instance_;
 }
 
-void Engine::Init()
+void Engine::Init(Scene* scene)
 {
 	timeM = new TimeManager();
 	windowM = new WindowManager();
@@ -23,7 +23,7 @@ void Engine::Init()
 	inputM = new InputManager();
 	soundM = new SoundManager();
 	textureM = new TextureManager();
-	sceneM = new SceneManager();
+	sceneM = new SceneManager(scene);
 }
 
 void Engine::MainLoop()

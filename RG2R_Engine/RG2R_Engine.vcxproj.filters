@@ -130,6 +130,12 @@
     <Filter Include="소스 파일\Game">
       <UniqueIdentifier>{0e7895a6-4905-40c4-a897-74584d6f91b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Engine\Main\WrappedEngine">
+      <UniqueIdentifier>{68686da1-152f-4eaf-aa4f-3ca3d4e8bb7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\main">
+      <UniqueIdentifier>{d2cee240-18ef-4a37-8c9b-e7602ebf8bcb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -447,6 +453,9 @@
     <ClInclude Include="TitleText.h">
       <Filter>소스 파일\Game</Filter>
     </ClInclude>
+    <ClInclude Include="WrappedEngine.h">
+      <Filter>소스 파일\Engine\Main\WrappedEngine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="RG2R_Engine.rc">
@@ -464,9 +473,6 @@
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>소스 파일\Engine\Utils\stdafx</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일\Engine\Main</Filter>
     </ClCompile>
     <ClCompile Include="Engine.cpp">
       <Filter>소스 파일\Engine\Engine</Filter>
@@ -761,6 +767,12 @@
     </ClCompile>
     <ClCompile Include="TitleText.cpp">
       <Filter>소스 파일\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="WrappedEngine.cpp">
+      <Filter>소스 파일\Engine\Main\WrappedEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일\Game\main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

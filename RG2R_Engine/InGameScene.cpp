@@ -21,6 +21,7 @@
 #include "StageData.h"
 #include "SceneData.h"
 #include "MapEditData.h"
+#include "SettingData.h"
 #include <fstream>
 
 #include "Pen1.h"

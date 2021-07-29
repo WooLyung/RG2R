@@ -16,7 +16,7 @@ private:
 	void* data;
 
 public:
-	SceneManager();
+	SceneManager(Scene* scene);
 	~SceneManager();
 
 	void Update();

@@ -2,25 +2,12 @@
 #include "SceneManager.h"
 #include "Scene.h"
 #include "Engine.h"
-#include "IntroScene.h"
-#include "InGameScene.h"
-#include "ChapterScene.h"
-#include "StageScene.h"
-#include "SettingData.h"
 
-Scene* SceneManager::FirstScene()
-{
-	ShowCursor(false);
-	SettingData::GetInstance();
-
-	return new IntroScene;
-}
-
-SceneManager::SceneManager()
+SceneManager::SceneManager(Scene* scene)
 {
 	scenes = new std::vector<Scene*>;
 	deletedScenes = new std::vector<Scene*>;
-	ChangeScene(FirstScene());
+	ChangeScene(scene);
 }
 
 SceneManager::~SceneManager()

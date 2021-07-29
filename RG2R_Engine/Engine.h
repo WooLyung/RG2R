@@ -35,7 +35,7 @@ public:
 
 	static Engine* GetInstance();
 
-	void Init();
+	void Init(Scene*);
 	void MainLoop();
 	void Release();
 
