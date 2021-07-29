@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
-#define GAME_TITLE "Lightcuit"
-#define BACKGROUND_COLOR 0xff664E44
+#define GAME_TITLE "RG2R"
+#define BACKGROUND_COLOR 0x00000000
 
 #define WINDOW_DEFAULT_WIDTH 1280
 #define WINDOW_DEFAULT_HEIGHT 720
