@@ -133,6 +133,12 @@
     <Filter Include="소스 파일\Engine\Main\WrappedEngine">
       <UniqueIdentifier>{68686da1-152f-4eaf-aa4f-3ca3d4e8bb7a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Game\TestScene">
+      <UniqueIdentifier>{1920b1a4-1e77-4a79-8bba-c3d4de3bd06a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\TestObject">
+      <UniqueIdentifier>{3e71778d-11c0-47d2-8439-8a43ca18b963}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -253,7 +259,10 @@
       <Filter>소스 파일\Engine\Main\WrappedEngine</Filter>
     </ClInclude>
     <ClInclude Include="TestScene.h">
-      <Filter>소스 파일\Game</Filter>
+      <Filter>소스 파일\Game\TestScene</Filter>
+    </ClInclude>
+    <ClInclude Include="TestObject.h">
+      <Filter>소스 파일\Game\TestObject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -373,7 +382,10 @@
       <Filter>소스 파일\Game</Filter>
     </ClCompile>
     <ClCompile Include="TestScene.cpp">
-      <Filter>소스 파일\Game</Filter>
+      <Filter>소스 파일\Game\TestScene</Filter>
+    </ClCompile>
+    <ClCompile Include="TestObject.cpp">
+      <Filter>소스 파일\Game\TestObject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

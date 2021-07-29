@@ -7,6 +7,7 @@ void WrappedEngine::Start()
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
 	RG2R->Init(startScene);
+	if (setting) setting();
 	RG2R->MainLoop();
 	RG2R->Release();
 }
@@ -14,5 +15,11 @@ void WrappedEngine::Start()
 WrappedEngine& WrappedEngine::SetFirstScene(Scene* scene)
 {
 	this->startScene = scene;
+	return *this;
+}
+
+WrappedEngine& WrappedEngine::SetSetting(void(*setting)())
+{
+	this->setting = setting;
 	return *this;
 }

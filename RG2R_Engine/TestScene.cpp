@@ -1,7 +1,8 @@
 #include "stdafx.h"
 #include "TestScene.h"
+#include "TestObject.h"
 
 void TestScene::OnStart()
 {
-	std::cout << "HI" << std::endl;
+	AttachObject(new TestObject);
 }

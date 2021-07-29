@@ -569,7 +569,11 @@ std::vector<Camera*> Object::FindCamerasCondition(std::function<bool(Camera*)> c
 
 Scene* Object::GetScene()
 {
-	return scene;
+	if (scene != nullptr)
+		return scene;
+	if (parent != nullptr)
+		return parent->GetScene();
+	return nullptr;
 }
 
 std::string Object::GetTag()
@@ -617,8 +621,8 @@ bool Object::IsParent(Object* object)
 void Object::Destroy()
 {
 	state = OBJ_DESTROY;
+	GetScene()->DestroyObject(this);
 	DetachParent();
-	RG2R_SceneM->GetScene()->DestroyObject(this);
 
 	for (auto& child : childs)
 		child->Destroy();
