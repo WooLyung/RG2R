@@ -18,7 +18,7 @@ WrappedEngine& WrappedEngine::SetFirstScene(Scene* scene)
 	return *this;
 }
 
-WrappedEngine& WrappedEngine::SetSetting(void(*setting)())
+WrappedEngine& WrappedEngine::SetSetting(FP setting)
 {
 	this->setting = setting;
 	return *this;

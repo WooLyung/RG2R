@@ -144,28 +144,28 @@ public:
 	virtual void OnDetachChild() {} // 자식 오브젝트 변수가 삭제됐을 때
 
 	// 라이프사이클 리스너
-	std::function<void()> onStartListener = NULL;
-	std::function<void()> onFirstUpdateListener = NULL;
-	std::function<void()> onFirstUpdateBeforeListener = NULL;
-	std::function<void()> onUpdateListener = NULL;
-	std::function<void()> onUpdateBeforeListener = NULL;
-	std::function<void()> onFirstRenderListener = NULL;
-	std::function<void()> onFirstRenderBeforeListener = NULL;
-	std::function<void()> onRenderListener = NULL;
-	std::function<void()> onRenderBeforeListener = NULL;
-	std::function<void()> onDestroyListener = NULL;
+	FP onStartListener = NULL;
+	FP onFirstUpdateListener = NULL;
+	FP onFirstUpdateBeforeListener = NULL;
+	FP onUpdateListener = NULL;
+	FP onUpdateBeforeListener = NULL;
+	FP onFirstRenderListener = NULL;
+	FP onFirstRenderBeforeListener = NULL;
+	FP onRenderListener = NULL;
+	FP onRenderBeforeListener = NULL;
+	FP onDestroyListener = NULL;
 
 	// 이벤트 리스너
-	std::function<void()> onAttachComponentListener = NULL;
-	std::function<void()> onDetachComponentListener = NULL;
-	std::function<void()> onCollisionEnterListener = NULL;
-	std::function<void()> onCollisionStayListener = NULL;
-	std::function<void()> onCollisionExitListener = NULL;
-	std::function<void()> onChangeNameListener = NULL;
-	std::function<void()> onChangeTagListener = NULL;
-	std::function<void()> onChangeParentListener = NULL;
-	std::function<void()> onAttachChildListener = NULL;
-	std::function<void()> onDetachChildListener = NULL;
+	FP onAttachComponentListener = NULL;
+	FP onDetachComponentListener = NULL;
+	FP onCollisionEnterListener = NULL;
+	FP onCollisionStayListener = NULL;
+	FP onCollisionExitListener = NULL;
+	FP onChangeNameListener = NULL;
+	FP onChangeTagListener = NULL;
+	FP onChangeParentListener = NULL;
+	FP onAttachChildListener = NULL;
+	FP onDetachChildListener = NULL;
 
 	// 기타
 	bool GetIsFirstRender() { return isFirstRender; }

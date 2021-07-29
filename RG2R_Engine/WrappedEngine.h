@@ -6,10 +6,10 @@ class WrappedEngine
 {
 private:
 	Scene* startScene = nullptr;
-	void (*setting)() = nullptr;
+	FP setting = nullptr;
 
 public:
 	WrappedEngine& SetFirstScene(Scene*);
-	WrappedEngine& SetSetting(void(*)());
+	WrappedEngine& SetSetting(FP);
 	void Start();
 };
