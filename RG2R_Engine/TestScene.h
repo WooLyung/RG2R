@@ -5,4 +5,5 @@ class TestScene
 	: public Scene
 {
 	void OnStart();
+	void OnUpdate();
 };

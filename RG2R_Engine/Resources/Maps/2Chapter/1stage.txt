@@ -1,9 +1,0 @@
-x:7, y:7, zoom:0.5, text:스테이지_화면에서_맵\에디터로_갈_수_있습니다
-x:-2, y:1, type:battery, dir:right, color:blue
-x:-2, y:0, type:battery, dir:right, color:red
-x:-2, y:-1, type:battery, dir:right, color:green
-x:0, y:-1, type:sub_gate, dir:right
-x:0, y:0, type:division_gate, dir:right, isStatic:true
-x:0, y:1, type:reverse_gate, dir:up, isStatic:true
-x:2, y:1, type:add_gate, dir:right
-x:2, y:-1, type:light2, dir:right

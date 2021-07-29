@@ -1,7 +1,0 @@
-x:7, y:5, zoom:0.5, text:R키로_게이트를_회전\E키로_선을_지웁니다
-x:-3, y:2, type:battery, dir:right, color:green
-x:-3, y:0, type:battery, dir:down, color:green
-x:-3, y:-2, type:battery, dir:left, color:green
-x:0, y:1, type:add_gate, dir:left
-x:0, y:-1, type:add_gate, dir:down
-x:3, y:0, type:light1, dir:up
