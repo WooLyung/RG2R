@@ -18,6 +18,13 @@ Textures* Textures::PushTexture(const std::string& path)
 	return this;
 }
 
+Textures* Textures::PushTexture(Texture* texture)
+{
+	textures.push_back(texture);
+
+	return this;
+}
+
 Texture* Textures::PopTexture()
 {
 	Texture* tex = textures[textures.size() - 1];

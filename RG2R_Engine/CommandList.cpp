@@ -83,7 +83,7 @@ void CommandList::Restart()
 	time = 0;
 }
 
-CommandList* CommandList::PushCommand(std::function<void()> function, float time)
+CommandList* CommandList::PushCommand(FP function, float time)
 {
 	Command command;
 	command.command = function;

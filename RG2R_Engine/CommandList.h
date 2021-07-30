@@ -20,7 +20,7 @@ public:
 	bool GetIsLoop();
 
 	CommandList* SetIsLoop(bool);
-	CommandList* PushCommand(std::function<void()>, float);
+	CommandList* PushCommand(FP, float);
 	Command PopCommand();
 
 	void Update();
