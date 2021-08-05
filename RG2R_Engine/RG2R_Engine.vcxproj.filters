@@ -136,9 +136,6 @@
     <Filter Include="소스 파일\Game\TestScene">
       <UniqueIdentifier>{1920b1a4-1e77-4a79-8bba-c3d4de3bd06a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Game\TestObject">
-      <UniqueIdentifier>{3e71778d-11c0-47d2-8439-8a43ca18b963}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -261,9 +258,6 @@
     <ClInclude Include="TestScene.h">
       <Filter>소스 파일\Game\TestScene</Filter>
     </ClInclude>
-    <ClInclude Include="TestObject.h">
-      <Filter>소스 파일\Game\TestObject</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="RG2R_Engine.rc">
@@ -383,9 +377,6 @@
     </ClCompile>
     <ClCompile Include="TestScene.cpp">
       <Filter>소스 파일\Game\TestScene</Filter>
-    </ClCompile>
-    <ClCompile Include="TestObject.cpp">
-      <Filter>소스 파일\Game\TestObject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
